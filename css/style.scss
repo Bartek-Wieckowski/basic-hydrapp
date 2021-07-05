@@ -47,11 +47,7 @@
   --mb-6: 3rem;
 
   //z-index
-  --z-back: -10;
   --z-normal: 1;
-  --z-tooltip: 10;
-  --z-fixed: 100;
-  --z-modal: 1000;
 }
 /* --**BASIC**-- */
 
@@ -119,7 +115,7 @@ img {
     font-size: var(--biggest-font-size);
     width: 150px;
     height: 130px;
-    z-index: 1;
+    z-index: var(--z-normal);
   }
 }
 /* --**BUTTONS**-- */
