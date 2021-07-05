@@ -84,4 +84,21 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* --**MAIN**-- */
+.main {
+  width: 375px;
+  border: 1px solid black;
+}
+
+.main__header {
+  width: 275px;
+  margin: 3rem 2.5rem 0 2.5rem;
+}
+
+.main__header-h1 {
+  line-height: 5rem;
+  font-size: var(--h1-font-size);
+  color: var(--second-color);
+}
 /*# sourceMappingURL=style.css.map */

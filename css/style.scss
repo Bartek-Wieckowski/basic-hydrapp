@@ -88,3 +88,22 @@ img {
   height: auto;
   //display: block;
 }
+
+/* --**MAIN**-- */
+
+.main {
+  width: 375px;
+  // min-height: 812px;
+  border: 1px solid black;
+
+  &__header {
+    width: 275px;
+    // height: 48px;
+    margin: 3rem 2.5rem 0 2.5rem;
+    &-h1 {
+      line-height: 5rem;
+      font-size: var(--h1-font-size);
+      color: var(--second-color);
+    }
+  }
+}
