@@ -1,4 +1,4 @@
-# My first SMALL APP 
+# My first SMALL APP / PWA
 
 # GH Pages: https://bartek-wieckowski.github.io/basic-hydrapp/
 
