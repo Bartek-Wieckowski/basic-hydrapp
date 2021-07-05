@@ -56,20 +56,13 @@
 ::after {
   box-sizing: border-box;
 }
-html {
-  scroll-behavior: smooth;
-}
 
 body {
   margin: 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--bg-color);
-  // color: var(--text-color);
   line-height: 1.6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
   font-weight: var(--font-semi);
   text-align: center;
@@ -90,6 +83,7 @@ img {
 
 .main {
   width: 375px;
+  margin: 0 auto;
 
   &__header {
     width: 275px;
@@ -147,6 +141,11 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .water-glass {
     margin-top: 5rem;
   }

@@ -196,25 +196,12 @@
           box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--bg-color);
   line-height: 1.6;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   min-height: 100vh;
   font-weight: var(--font-semi);
   text-align: center;
@@ -234,6 +221,7 @@ img {
 /* --**MAIN**-- */
 .main {
   width: 375px;
+  margin: 0 auto;
 }
 
 .main__header {
@@ -304,6 +292,17 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .water-glass {
     margin-top: 5rem;
   }
