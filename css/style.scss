@@ -13,7 +13,7 @@
 
   --body-font: "Roboto", sans-serif;
 
-  --biggest-font-size: 3.5rem;
+  --biggest-font-size: 6rem;
   --big-font-size: 3rem;
   --huge-font-size: 1.75rem;
   --h1-font-size: 1.5rem;
@@ -23,8 +23,8 @@
   --small-font-size: 0.75rem;
 
   @media screen and (min-width: 968px) {
-    --big-font-size: 4.5rem;
-    --biggest-font-size: 6rem;
+    --biggest-font-size: 5.5rem;
+    --big-font-size: 3.5rem;
     --huge-font-size: 3rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.75rem;
@@ -93,17 +93,81 @@ img {
 
 .main {
   width: 375px;
-  // min-height: 812px;
-  border: 1px solid black;
 
   &__header {
     width: 275px;
-    // height: 48px;
     margin: 3rem 2.5rem 0 2.5rem;
     &-h1 {
       line-height: 5rem;
       font-size: var(--h1-font-size);
       color: var(--second-color);
+    }
+  }
+}
+
+/* --**WATER GLASS**-- */
+.water-glass {
+  margin-bottom: 4rem;
+  position: relative;
+  &__number {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--frist-color);
+    font-size: var(--biggest-font-size);
+    width: 150px;
+    height: 130px;
+    z-index: 1;
+  }
+}
+/* --**BUTTONS**-- */
+.btn {
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  width: 215px;
+  text-transform: uppercase;
+
+  &--add {
+    margin: var(--mb-2) 0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    color: rgb(148, 11, 11);
+    border-radius: 1rem;
+    border: none;
+    padding: 1rem;
+    font-weight: bold;
+  }
+  &--remove {
+    margin-bottom: var(--mb-5);
+    color: rgb(148, 11, 11);
+    border-radius: 1rem;
+    border: none;
+    padding: 1rem;
+    font-weight: bold;
+  }
+}
+
+/* --**FOOTER**-- */
+.footer {
+  animation: footer 5s ease infinite;
+  opacity: 0.3;
+}
+
+@media screen and (min-width: 768px) {
+  .water-glass {
+    margin-top: 5rem;
+  }
+  .btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--remove {
+      margin-bottom: 0;
+      cursor: pointer;
+    }
+    &--add {
+      cursor: pointer;
     }
   }
 }
