@@ -1,4 +1,4 @@
-# My first small app 
+# My first SMALL APP 
 
 # GH Pages: https://bartek-wieckowski.github.io/basic-hydrapp/
 
