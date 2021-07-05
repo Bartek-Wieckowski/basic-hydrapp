@@ -1,4 +1,3 @@
-# My first SMALL APP 
 
 # GH Pages: https://bartek-wieckowski.github.io/basic-hydrapp/
 
@@ -10,6 +9,8 @@
 Thanks for checking out this front-end coding challenge.
 
 ## Information
+Small app which allows you to keep track of how much water you drink per day.
+
 
 [This project is the second project from the WTF:Co ten frontend course]
 
