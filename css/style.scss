@@ -120,14 +120,10 @@ img {
 }
 /* --**BUTTONS**-- */
 .btn {
-  margin: 0 auto;
-  display: grid;
-  justify-content: center;
-  width: 215px;
-  text-transform: uppercase;
-
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   &--add {
-    margin: var(--mb-2) 0;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     color: rgb(148, 11, 11);
     border-radius: 1rem;
@@ -136,7 +132,6 @@ img {
     font-weight: bold;
   }
   &--remove {
-    margin-bottom: var(--mb-5);
     color: rgb(148, 11, 11);
     border-radius: 1rem;
     border: none;
@@ -148,6 +143,7 @@ img {
 /* --**FOOTER**-- */
 .footer {
   opacity: 0.3;
+  margin-top: var(--mb-3);
 }
 
 @media screen and (min-width: 768px) {
@@ -155,11 +151,7 @@ img {
     margin-top: 5rem;
   }
   .btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     &--remove {
-      margin-bottom: 0;
       cursor: pointer;
     }
     &--add {
