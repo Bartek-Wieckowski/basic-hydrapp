@@ -1,11 +1,18 @@
+// GOOGLE FONTS
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
 /* --**VARIABLES CSS**-- */
 :root {
+  // colors
   --frist-color: #000;
   --second-color: #fff;
   --bg-color: #3767ad;
   --bubbleColor: #eceff1;
+
+  //font and typography
+
   --body-font: "Roboto", sans-serif;
+
   --biggest-font-size: 3.5rem;
   --big-font-size: 3rem;
   --huge-font-size: 1.75rem;
@@ -14,23 +21,8 @@
   --h3-font-size: 1.125rem;
   --normal-font-size: 0.938rem;
   --small-font-size: 0.75rem;
-  --font-normal: 400;
-  --font-semi: 500;
-  --mb-1: 0.5rem;
-  --mb-2: 1rem;
-  --mb-3: 1.5rem;
-  --mb-4: 2rem;
-  --mb-5: 2.5rem;
-  --mb-6: 3rem;
-  --z-back: -10;
-  --z-normal: 1;
-  --z-tooltip: 10;
-  --z-fixed: 100;
-  --z-modal: 1000;
-}
 
-@media screen and (min-width: 968px) {
-  :root {
+  @media screen and (min-width: 968px) {
     --big-font-size: 4.5rem;
     --biggest-font-size: 6rem;
     --huge-font-size: 3rem;
@@ -40,16 +32,33 @@
     --normal-font-size: 1rem;
     --small-font-size: 0.875rem;
   }
-}
 
+  //font weight
+  --font-normal: 400;
+  --font-semi: 500;
+
+  //Margin
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+
+  //z-index
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
 /* --**BASIC**-- */
+
 *,
 ::before,
 ::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -59,21 +68,15 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--bg-color);
+  // color: var(--text-color);
   line-height: 1.6;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
   font-weight: var(--font-semi);
   text-align: center;
 }
-
 h1 {
   margin: 0;
   font-weight: var(--font-semi-bold);
@@ -83,5 +86,5 @@ h1 {
 img {
   max-width: 100%;
   height: auto;
+  //display: block;
 }
-/*# sourceMappingURL=style.css.map */
